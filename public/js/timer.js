@@ -20,9 +20,7 @@ Timer.prototype.start = function (callback) {
   !this.timerId && this.reTime()
 }
 
-/**
- * 
- */
+// Pause/Stop
 Timer.prototype.pause = function () {
   if (this.timerId) {
     clearTimeout(this.timerId)
@@ -31,7 +29,7 @@ Timer.prototype.pause = function () {
 }
 
 /**
- * 
+ * Refresh the time
  * @return {string} 
  */
 Timer.prototype.reTime = function () {
@@ -40,31 +38,31 @@ Timer.prototype.reTime = function () {
   } else if (this.time > 0) {
     this.time--
   } else {
-    // 
+    // Equal to 0 to end the timing
     this.formatOutput(true)
     return false
   }
 
-  // 
+  // Output time
   this.formatOutput()
-  // 
+  // Recursion
   this.timerId = setTimeout(this.reTime.bind(this), 1000)
 }
 
 /**
- * 
+ *  Output time
  */
 Timer.prototype.formatOutput = function (end) {
   if (end) {
     this.callback('00:00:00')
     return '00:00:00'
   }
-  // 
+  // Get hours, minutes, seconds
   let h = parseInt(this.time / 3600)
   let m = parseInt((this.time - h * 3600) / 60)
   let s = this.time - h * 3600 - m * 60
 
-  // 
+  // Formatting
   // eslint-disable-next-line no-unused-expressions
   h < 10 ? h = `0${h}` : ''
   // eslint-disable-next-line no-unused-expressions
