@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudBud</title>
+    <link rel="stylesheet" href="styles/styles.scss" />
+    <link rel="stylesheet" href="styles/task-list.scss" />
+</head>
+
+<!-- Studbud logo -->
+<body>
+    <div id="app">
+        <div class="nav-list">
+            <img src="./image/logo.jpeg" class="logo" alt="">
+
+            <!-- Navigation bar -->
+            <div class="nav active">
+                <a href="index.html"><img src="./image/task.png"></a>
+            </div>
+            <div class="nav">
+                <a href="content.html"><img src="./image/word.png"></a>
+            </div>
+            <div class="nav">
+                <a href="pomodoro-timer.html"><img src="./image/ccc.png"></a>
+            </div>
+            <div class="nav">
+                <a href="music.html"><img src="./image/music.png"></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="task-list">
+                <h2>Task List</h2>
+                <div>
+                    <div class="btn new-btn">New Task</div>
+                </div>
+
+                <!-- Task List -->
+                <div class="task cc">
+                    <div class="mark"></div>
+                    <div class="title"></div>
+                    <div class="rating">Priority rating</div>
+                    <div class="time">Estimated time</div>
+                    <div class="due-date">Due date</div>
+                    <div class="status">Status</div>
+                </div>
+                <div class="task-wrap"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Task -->
+    <div class="dialog">
+        <h2>Add Task</h2>
+
+        <div class="form-item">
+            <label for="">Color</label>
+            <input id="color" type="text" placeholder="Color">
+        </div>
+
+        <div class="form-item">
+            <label for="">Title</label>
+            <input id="title" type="text" placeholder="title">
+        </div>
+
+        <div class="form-item">
+            <label for="">Priority Raing</label>
+            <input id="rating" type="text" placeholder="Priority Rating">
+        </div>
+
+        <div class="form-item">
+            <label for="">Estimated time</label>
+            <input id="time" type="text" placeholder="Estimated time">
+        </div>
+
+        <div class="form-item">
+            <label for="">Due date</label>
+            <input id="date" type="text" placeholder="Due date">
+        </div>
+
+        <div class="form-item">
+            <label for="">Status</label>
+            <input id="status" type="text" placeholder="Status">
+        </div>
+
+        <div class="btn submit-btn">Submit</div>
+    </div>
+
+    <div class="popup">
+        <div class="timer">
+            <div class="content" id="time-1">00 : 00 : 00</div>
+            <div style="text-align: center;">
+                <img id="start-btn" src="./image/play.png" alt="">
+                <img id="pause-btn" style="display: none;" src="./image/pause.png" alt="">
+            </div>
+        </div>
+        <div class="music">
+            <div class="content" id="m-name">Salt</div>
+            <div style="text-align: center;">
+                <img id="left" src="image/left.png" alt="">
+                <img id="play" src="image/play_1.png" alt="">
+                <img id="pause" style="display: none" src="image/pause_1.png" alt="">
+                <img id="right" src="image/right.png" alt="">
+            </div>
+        </div>
+        <div style="position: fixed;top: -9999px;left: -9999px;">
+            <audio id="Unstoppable" src="./music/Unstoppable.mp3"></audio>
+            <audio id="Salt-Ava_Max" src="./music/Salt-Ava_Max.mp3"></audio>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/pomodoro.js"></script>
+    <script src="js/music.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.form-item {
+  margin: 8px 0;
+}
+
+.task-list {
+  .task {
+    position: relative;
+    background: rgb(231, 230, 230);
+    border-radius: 16px;
+    margin: 0 0 16px;
+    display: inline-flex;
+    width: 694px;
+
+    &.cc {
+      font-size: 12px;
+      background: #fff;
+      color: #ccc;
+    }
+
+    .mark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 10px;
+      border-radius: 100px;
+    }
+
+    .title {
+      padding: 8px 8px 8px 18px;
+      width: 200px;
+      border-right: 1px solid #fff;
+    }
+
+    .rating,
+    .time,
+    .due-date {
+      padding: 8px;
+      width: 100px;
+      border-right: 1px solid #fff;
+      text-align: center;
+    }
+
+    .status {
+      padding: 8px;
+      width: 100px;
+      text-align: center;
+    }
+  }
+}

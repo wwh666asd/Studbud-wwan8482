@@ -1,0 +1,74 @@
+.music {
+  position: relative;
+  border-radius: 8px;
+  padding: 0 0 0 32px;
+  margin: 32px 0 0;
+  border: 1px solid rgb(161, 252, 205);
+  .aaa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 16px;
+    background: rgb(161, 252, 205);
+  }
+}
+.music-item {
+  display: flex;
+  margin: 0 0 8px;
+  cursor: pointer;
+  color: #333;
+  font-size: 13px;
+  &.ttt {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  div {
+    width: 200px;
+  }
+}
+.ctrl {
+  padding: 0 0 8px;
+  margin: 128px 0 0;
+  .ppp {
+    position: relative;
+    height: 2px;
+    background: #ccc;
+    margin: 0 0 8px;
+    .inner {
+      position: absolute;
+      top: -1px;
+      left: 0;
+      background: rgb(165, 252, 208);
+      height: 4px;
+    }
+  }
+  .accc {
+    display: flex;
+    align-items: center;
+    .cover {
+      width: 50px;
+      margin: 0 8px 0 0;
+    }
+   
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      .www {
+        margin: 0 16px;
+      }
+      .opop {
+        display: none;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+#c-un {
+  display: none;
+}

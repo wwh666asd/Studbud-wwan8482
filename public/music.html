@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudBud</title>
+  <link rel="stylesheet" href="styles/styles.scss" />
+  <link rel="stylesheet" href="styles/music.scss" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="nav-list">
+      <img src="./image/logo.jpeg" class="logo" alt="">
+
+      <div class="nav">
+        <a href="index.html"><img src="./image/task.png"></a>
+      </div>
+      <div class="nav">
+        <a href="content.html"><img src="./image/word.png"></a>
+      </div>
+      <div class="nav">
+        <a href="pomodoro-timer.html"><img src="./image/ccc.png"></a>
+      </div>
+      <div class="nav active">
+        <a href="music.html"><img src="./image/music.png"></a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="music">
+        <h2>Music</h2>
+
+        <div class="aaa"></div>
+
+        <div class="music-item ttt">
+          <div>Music</div>
+          <div>Singer</div>
+          <div>Album</div>
+        </div>
+
+        <div class="music-item" id="salt">
+          <div>Salt</div>
+          <div>Ava Max</div>
+          <div>xxx</div>
+        </div>
+
+        <div class="music-item" id="unst">
+          <div>Unstoppable</div>
+          <div>Sia</div>
+          <div>xxx</div>
+        </div>
+
+        <div class="ctrl">
+          <!-- 进度条 -->
+          <div class="ppp">
+            <div class="inner" id="inner"></div>
+          </div>
+          <div class="accc">
+            <img class="cover" id="c-salt" src="image/WechatIMG394.jpeg" alt="">
+            <img class="cover" id="c-un" src="image/WechatIMG392.jpeg" alt="">
+            <div id="m-name">Salt</div>
+            <div class="right">
+              <img id="left" src="image/left.png" alt="">
+              <img class="www" id="play" src="image/play_1.png" alt="">
+              <img class="www opop" id="pause" src="image/pause_1.png" alt="">
+              <img id="right" src="image/right.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="position: fixed;top: -9999px;left: -9999px;">
+    <audio id="Unstoppable" src="./music/Unstoppable.mp3"></audio>
+    <audio id="Salt-Ava_Max" src="./music/Salt-Ava_Max.mp3"></audio>
+  </div>
+
+  <script src="js/music.js"></script>
+</body>
+
+</html>

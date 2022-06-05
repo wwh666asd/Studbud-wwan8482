@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudBud</title>
+  <link rel="stylesheet" href="styles/styles.scss" />
+  <link rel="stylesheet" href="styles/pomodoro-timer.scss" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="nav-list">
+      <img src="./image/logo.jpeg" class="logo" alt="">
+
+      <div class="nav">
+        <a href="index.html"><img src="./image/task.png"></a>
+      </div>
+      <div class="nav">
+        <a href="content.html"><img src="./image/word.png"></a>
+      </div>
+      <div class="nav active">
+        <a href="pomodoro-timer.html"><img src="./image/ccc.png"></a>
+      </div>
+      <div class="nav">
+        <a href="music.html"><img src="./image/music.png"></a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="pomodoro-timer">
+        <div class="timer-card">
+          <h2 class="title">Pomodoro Timer</h2>
+          <div class="ccc">
+            <div class="time" id="time-1">00 : 00 : 00</div>
+            <div>
+              <span>Hours</span>
+              <span style="margin: 0 64px">Minutes</span>
+              <span>Seconds</span>
+            </div>
+            <div class="action">
+              <img id="reset-btn" src="./image/reset.png" alt="">
+              <img id="start-btn" style="margin: 0 32px;" src="./image/play.png" alt="">
+              <img id="pause-btn" style="margin: 0 32px;" src="./image/pause.png" alt="">
+              <img src="./image/ccc.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/timer.js"></script>
+  <script src="js/pomodoro.js"></script>
+</body>
+
+</html>

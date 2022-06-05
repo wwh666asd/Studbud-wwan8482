@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudBud</title>
+  <link rel="stylesheet" href="styles/styles.scss" />
+  <link rel="stylesheet" href="styles/content.scss" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="nav-list">
+      <img src="./image/logo.jpeg" class="logo" alt="">
+
+      <div class="nav">
+        <a href="index.html"><img src="./image/task.png"></a>
+      </div>
+      <div class="nav active">
+        <a href="content.html"><img src="./image/word.png"></a>
+      </div>
+      <div class="nav">
+        <a href="pomodoro-timer.html"><img src="./image/ccc.png"></a>
+      </div>
+      <div class="nav">
+        <a href="music.html"><img src="./image/music.png"></a>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Content</h2>
+      <div class="btn">Task 1 Memorize 15 words</div>
+
+      <div class="card-list">
+        <div class="card">
+          <div class="word">Abandon</div>
+          <div class="desc">give up completely (apractice or acourse of action)</div>
+        </div>
+
+        <div class="card">
+          <div class="word">Abandon</div>
+          <div class="desc">give up completely (apractice or acourse of action)</div>
+        </div>
+
+        <div class="card">
+          <div class="word">Abandon</div>
+          <div class="desc">give up completely (apractice or acourse of action)</div>
+        </div>
+
+        <div class="card">
+          <div class="word">Abandon</div>
+          <div class="desc">give up completely (apractice or acourse of action)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup">
+    <div class="timer">
+      <div class="content" id="time-1">00 : 00 : 00</div>
+      <div style="text-align: center;">
+        <img id="start-btn" src="./image/play.png" alt="">
+        <img id="pause-btn" style="display: none;" src="./image/pause.png" alt="">
+      </div>
+    </div>
+    <div class="music">
+      <div class="content" id="m-name">Salt</div>
+      <div style="text-align: center;">
+        <img id="left" src="image/left.png" alt="">
+        <img id="play" src="image/play_1.png" alt="">
+        <img id="pause" style="display: none" src="image/pause_1.png" alt="">
+        <img id="right" src="image/right.png" alt="">
+      </div>
+    </div>
+    <div style="position: fixed;top: -9999px;left: -9999px;">
+      <audio id="Unstoppable" src="./music/Unstoppable.mp3"></audio>
+      <audio id="Salt-Ava_Max" src="./music/Salt-Ava_Max.mp3"></audio>
+    </div>
+  </div>
+
+  <script src="js/timer.js"></script>
+  <script src="js/pomodoro.js"></script>
+  <script src="js/music.js"></script>
+
+</body>
+
+</html>
