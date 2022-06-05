@@ -28,10 +28,7 @@ Timer.prototype.pause = function () {
   }
 }
 
-/**
- * Refresh the time
- * @return {string} 
- */
+
 Timer.prototype.reTime = function () {
   if (this.type) {
     this.time++
