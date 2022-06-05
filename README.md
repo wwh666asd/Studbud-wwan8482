@@ -49,3 +49,18 @@ Now
 >4.Click New Task to create a new learning task, and then set the estimated time for completion of the task, completion status, etc.
 
 ![NewTask.png](https://s2.loli.net/2022/06/05/FJUyCvadTSWXkH4.png)
+
+
+## References
+
+iconfont-Alibaba vector icon library. (2022). Retrieved 5 June 2022, from https://www.iconfont.cn/
+
+Max, A. (2018). Salt [Online]. Heaven & Hell.
+
+Kate, S. (2016). Unstoppable [Online]. This is acting.
+
+## Images references
+
+https://en.wikipedia.org/wiki/Salt_(Ava_Max_song)
+
+https://www.deezer.com/en/track/117708444
