@@ -15,18 +15,18 @@ function saltPlay() {
   Unstoppable.pause()
   current = 'Salt'
   SaltAvaMax.play()
-
+  // Get playback progress
   if (inner) {
     SaltAvaMax.ontimeupdate = (event) => {
       inner.style.width = `${event.target.currentTime / SaltAvaMax.duration * 100}%`
     }
   }
-
+  // Set the title of the song 1
   mname.innerHTML = 'Salt'
-
+  // Change the play button
   play.style.display = 'none'
   pause.style.display = 'inline-block'
-
+  // Set up the cover
   if (imgSalt) {
     imgSalt.style.display = 'inline-block'
     imgUn.style.display = 'none'
@@ -37,18 +37,18 @@ function unstPlay() {
   SaltAvaMax.pause()
   current = 'Unstoppable'
   Unstoppable.play()
-
+  // Get playback progress
   if (inner) {
     Unstoppable.ontimeupdate = (event) => {
       inner.style.width = `${event.target.currentTime / Unstoppable.duration * 100}%`
     }
   }
-
+  // Set the title of the song 2
   mname.innerHTML = 'Unstoppable'
-
+  // Change the play button
   play.style.display = 'none'
   pause.style.display = 'inline-block'
-
+  // Set up the cover
   if (imgSalt) {
     imgSalt.style.display = 'none'
     imgUn.style.display = 'inline-block'
@@ -72,7 +72,7 @@ pause.onclick = () => {
 
 var left = document.getElementById('left')
 var right = document.getElementById('right')
-
+// The next / previous song
 function next() {
   current === 'Salt' ? unstPlay() : saltPlay()
 }
