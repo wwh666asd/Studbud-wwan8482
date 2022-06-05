@@ -1,6 +1,6 @@
 var taskList = []
 
-        // render list
+        // render list('Kanban Board' )
         function renderList() {
             var taskWrap = document.querySelector('.task-wrap')
             var html = []
